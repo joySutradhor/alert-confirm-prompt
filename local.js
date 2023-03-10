@@ -4,12 +4,15 @@ const set = () =>{
 }
 const get = () =>{
   const x =  localStorage.getItem("joy");
-  console.log(JSON.parse(x));
+//   console.log(JSON.parse(x));
+ const splits = x.split(", ");
+ console.log(splits ) 
 }
 const update = () =>{
-    const obj = {name : "joy", age:25, roll:35};
-    const objString = JSON.stringify(obj);
-  const x =  localStorage.setItem("joy", objString);
+    // const obj = {name : "joy", age:25, roll:35};
+    // const objString = JSON.stringify(obj);
+    const arr = [1,3,4,44,55,5,66]
+  const x =  localStorage.setItem("joy", arr);
   
 }
 
@@ -27,3 +30,4 @@ const clears = () => {
     console.log("clicked")
     localStorage.clear();
 }
+
